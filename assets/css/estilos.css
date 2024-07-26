@@ -1,0 +1,29 @@
+body {    
+    margin: 0;
+    padding: 0;
+}
+
+.logo-github {
+    width: 15%;
+}
+
+header, section, nav, footer {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+nav {
+    margin-top: 0px;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+#about{
+    text-align: justify;
+}

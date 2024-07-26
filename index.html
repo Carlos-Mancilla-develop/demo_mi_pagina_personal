@@ -6,14 +6,134 @@
     <title>Mi Página Personal</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/estilos.css">
+    <script src="./assets/js/logica.js"></script>
 </head>
 <body>
-    <nav class="navbar fixed-top bg-body-tertiary">
+    <nav class="navbar sticky-top bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Mi Página Personal</a>
         </div>
     </nav>
 
+    <header>
+        <h1>Juan Pérez</h1>
+        <p>Desarrollador Frontend</p>
+    </header>
+
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>¡Hola! Soy un apasionado desarrollador frontend con un amor por la creación visual y
+            la funcionalidad intuitiva. Mi fascinación por el diseño web
+            y la tecnología me lleva a explorar continuamente nuevas tendencias
+            y herramientas. Con habilidades sólidas en HTML, CSS, y JavaScript,
+            transformo ideas en experiencias interactivas y atractivas. Mi enfoque
+            meticuloso y creativo se combina con un deseo constante de aprendizaje.
+            Cuando no estoy codificando, me encontrarás disfrutando de la
+            combinación perfecta de café y código. ¡Estoy emocionado
+            por la oportunidad de compartir mi viaje de desarrollo frontend contigo!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/img/Proyecto1.png" class="card-img-top" alt="proyecto1">
+                    <div class="card-body">
+                        <h5 class="card-title">Restorant Restó</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quos. Aliquid tempore exercitationem alias delectus facilis natus repellat atque architecto recusandae magni autem blanditiis commodi, itaque nobis suscipit ipsum! Consectetur?</p>
+                        <div class="m-3 text-center">
+                            <button class="html">HTML5</button>
+                            <button class="css">CSS</button>
+                            <button class="js">JS</button>
+                            <button class="bootstrap">BOOTSTRAP</button>
+                        </div>
+                        <div class="text-center">
+                            <img class="logo-github" src="./assets/img/logotipo-de-github.png" alt="github">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/img/proyecto2.avif" class="card-img-top" alt="proyecto2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pokemón</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quos. Aliquid tempore exercitationem alias delectus facilis natus repellat atque architecto recusandae magni autem blanditiis commodi, itaque nobis suscipit ipsum! Consectetur?</p>
+                        <div class="m-3 text-center">
+                            <button class="html">HTML5</button>
+                            <button class="css">CSS</button>
+                            <button class="bootstrap">BOOTSTRAP</button>
+                            <button class="js">VUE JS</button>
+                        </div>
+                        <div class="text-center">
+                            <img class="logo-github" src="./assets/img/logotipo-de-github.png" alt="github">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/img/Proyecto3.jpg" class="card-img-top" alt="proyecto3">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Personal</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, quos. Aliquid tempore exercitationem alias delectus facilis natus repellat atque architecto recusandae magni autem blanditiis commodi, itaque nobis suscipit ipsum! Consectetur?</p>
+                        <div class="m-3 text-center">
+                            <button class="html">HTML5</button>
+                            <button class="css">CSS</button>
+                            <button class="bootstrap">BOOTSTRAP</button>
+                        </div>
+                        <div class="text-center">
+                            <img class="logo-github" src="./assets/img/logotipo-de-github.png" alt="github">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="correo">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Detalles</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <button id="validaButton" type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Aviso</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="contenido" class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center sticky-bottom bg-dark">
+        <p>&copy; 2024 Juan Pérez</p>
+    </footer>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
