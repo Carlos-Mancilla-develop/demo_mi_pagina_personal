@@ -1,0 +1,1 @@
+Se está usando Bootstrap 5.3.3 y JQuery 3.7.1.
